@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup
 
 url = "https://www.metmuseum.org/art/collection/search/"
 
-cookies = {'incap_ses_1186_1661922': 'WJVsTr/vpTpmSo6N/4R1EAM9PF8AAAAAJMZq30Mwtn9GLYG3Ln2Zpg==',
-           'visid_incap_1662004': 'XAvDNnL2RfeAkpfIvozoyhyIOV8AAAAAQUIPAAAAAACvTQA8Mo9AEcc3VGzSFsnh',
-           '_ga': 'GA1.2.845980376.1597783314', '_gid': 'GA1.2.678224659.1597783314'}
+cookies = {'incap_ses_': '',
+           'visid_incap_': '',
+           '_ga': '', '_gid': ''}
 
 culturesToArtObjects = {}
 with open('ArtObj.json') as json_file:
