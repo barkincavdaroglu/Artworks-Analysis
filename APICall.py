@@ -51,42 +51,11 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=CONNECTIONS) as executor:
     with open('ArtObjectsWithImageLinks.json', 'w') as f:
         json.dump(out, f)
 
-
-
     time2 = time.time()
 
-
-
-
-
-
-
-
-
-
-cookies = {'incap_ses_1186_1661922': 'WJVsTr/vpTpmSo6N/4R1EAM9PF8AAAAAJMZq30Mwtn9GLYG3Ln2Zpg==',
-           'visid_incap_1662004': 'XAvDNnL2RfeAkpfIvozoyhyIOV8AAAAAQUIPAAAAAACvTQA8Mo9AEcc3VGzSFsnh',
-           '_ga': 'GA1.2.845980376.1597783314', '_gid': 'GA1.2.678224659.1597783314'}
-
-
-# def APICall2(url):
-#     response = requests.get("https://collectionapi.metmuseum.org/public/collection/v1/objects")
-#     artobjectlist = json.loads(response.content)
-#     print(artobjectlist)
-#     APICall("https://www.metmuseum.org/art/collection/search/", artobjectlist["objectIDs"])
-
-
-# def APICall(url, artlist):
-#     with open('AllArtObjects.json', 'w') as f:
-#         for objectID in artlist:
-#             response2 = requests.get(
-#                 "https://collectionapi.metmuseum.org/public/collection/v1/objects/" + str(objectID))
-#             artobject = json.loads(response2.content)
-#             print(artobject)
-#             json.dump(artobject, f)
-#
-#
-# APICall2(url2)
+cookies = {'incap_ses_1186_1661922': '',
+           'visid_incap_1662004': '',
+           '_ga': '', '_gid': ''}
 
 
 def WebCrawler():
